@@ -1,0 +1,6 @@
+@DarkOnix.Api_HostAddress = http://localhost:5283
+
+GET {{DarkOnix.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
