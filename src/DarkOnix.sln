@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{AC0CE839-116
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkOnix.Api", "DarkOnix.Api\DarkOnix.Api.csproj", "{E9AAAE4B-CDDB-40F9-B574-D048AE374A6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkOnix.Identidade.Api", "DarkOnix.Identidade.Api\DarkOnix.Identidade.Api.csproj", "{8B2CE713-EDBF-488D-83B2-C7A80EA04F69}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkOnix.Identity.Api", "DarkOnix.Identity.Api\DarkOnix.Identity.Api.csproj", "{8B2CE713-EDBF-488D-83B2-C7A80EA04F69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

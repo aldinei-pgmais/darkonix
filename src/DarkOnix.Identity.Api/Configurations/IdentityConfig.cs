@@ -1,8 +1,9 @@
-﻿using DarkOnix.Identidade.Api.Data;
+﻿using DarkOnix.Identity.Api.Data;
+using DarkOnix.Identity.Api.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace DarkOnix.Identidade.Api.Configurations;
+namespace DarkOnix.Identity.Api.Configurations;
 
 public static class IdentityConfig
 {
@@ -13,6 +14,7 @@ public static class IdentityConfig
 
         services.AddDefaultIdentity<IdentityUser>()
             .AddRoles<IdentityRole>()
+            .AddErrorDescriber<IdentityErrorMessages>()
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
     }

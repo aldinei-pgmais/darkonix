@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace DarkOnix.Identidade.Api.Migrations
+namespace DarkOnix.Identity.Api.Migrations
 {
     /// <inheritdoc />
     public partial class Initial : Migration

@@ -1,6 +1,6 @@
 ﻿using Microsoft.OpenApi.Models;
 
-namespace DarkOnix.Identidade.Api.Configurations;
+namespace DarkOnix.Identity.Api.Configurations;
 
 public static class SwaggerConfig
 {
@@ -19,15 +19,15 @@ public static class SwaggerConfig
                     Email = "aldinei.sampaio@pgmais.com.br",
                     Url = new Uri("https://github.com/aldinei-pgmais")
                 },
-                License = new() { Name = "MIT", Url = new Uri("https://mit-license.org/") },
-                TermsOfService = new Uri("https://github.com/aldinei-pgmais/darkonix/TERMOSOFSERVICE.md")
-            });
+                License = new() { Name = "MIT", Url = new Uri("https://github.com/aldinei-pgmais/darkonix/blob/main/LICENSE.md") },
+                TermsOfService = new Uri("https://github.com/aldinei-pgmais/darkonix/blob/main/TERMOSOFSERVICE.md")
+            });            
         });
     }
 
     public static void UseSwaggerConfiguration(this WebApplication app)
     {
         app.UseSwagger();
-        app.UseSwaggerUI();
+        app.UseSwaggerUI(options => options.ConfigObject.DefaultModelsExpandDepth = -1);
     }
 }

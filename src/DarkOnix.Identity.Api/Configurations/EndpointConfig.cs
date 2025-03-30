@@ -1,12 +1,12 @@
-﻿using DarkOnix.Identidade.Api.Endpoints.Identidade;
+﻿using DarkOnix.Identity.Api.Endpoints.Identity;
 
-namespace DarkOnix.Identidade.Api.Configurations;
+namespace DarkOnix.Identity.Api.Configurations;
 
 public static class EndpointConfig
 {
     public static void UseEndpointConfiguration(this WebApplication app)
     {
-        app.MapRegistrarEndpoint();
+        app.MapRegisterEndpoint();
         app.MapLoginEndpoint();
     }
 }

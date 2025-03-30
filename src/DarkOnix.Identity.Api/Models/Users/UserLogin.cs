@@ -1,14 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
-namespace DarkOnix.Identidade.Api.Models.Usuarios;
+namespace DarkOnix.Identity.Api.Models.Users;
 
-public sealed class UsuarioLogin
+public sealed class UserLogin
 {
     [Required(ErrorMessage = "O campo '{0}' é obrigatório")]
     [EmailAddress(ErrorMessage = "O campo '{0}' está em um formato inválido")]
     public string Email { get; set; } = string.Empty;
 
+    [DisplayName("Senha")]
     [Required(ErrorMessage = "O campo '{0}' é obrigatório")]
     [StringLength(100, ErrorMessage = "O campo '{0}' precisa ter entre {2} e {1} caracteres", MinimumLength = 8)]
-    public string Senha { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
 }
